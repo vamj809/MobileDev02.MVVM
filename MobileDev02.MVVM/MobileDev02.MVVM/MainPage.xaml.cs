@@ -13,5 +13,19 @@ namespace MobileDev02.MVVM
         public MainPage() {
             InitializeComponent();
         }
+
+        private async void OnLoginButtonClick(object sender, EventArgs e) {
+            if (usernameEntry.Text == null || usernameEntry.Text.Length == 0) {
+                await DisplayAlert("Error: Falta información", "El campo del nombre de usuario no puede estar vacío.", "OK");
+                usernameEntry.Focus();
+            }
+            else if (passwordEntry.Text == null || passwordEntry.Text.Length == 0) {
+                await DisplayAlert("Error: Falta información", "El campo de contraseña no puede estar vacío.", "OK");
+                passwordEntry.Focus();
+            }
+            else {
+                await DisplayAlert("Bienvenido", $"Hola {usernameEntry.Text}", "Gracias");
+            }
+        }
     }
 }
