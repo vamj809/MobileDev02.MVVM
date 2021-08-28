@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDev02.MVVM.Views.HomePage"
+            Title="Apps con Power">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Inicio">
+        <Grid Padding="10" 
+          VerticalOptions="Center" 
+          RowDefinitions="20, Auto, Auto, Auto, Auto" 
+          ColumnDefinitions="*,*">
+            <Image Source="speaker.png" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0"  />
+            <Label Text="Opcion 1" FontSize="Title" Grid.Row="1" Grid.Column="0" TextColor="White"/>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Opcion 2" />
+  <ContentPage Title="Opcion 3" />
+</TabbedPage>

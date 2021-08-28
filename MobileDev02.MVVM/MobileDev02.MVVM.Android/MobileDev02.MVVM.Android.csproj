@@ -93,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
+    <AndroidResource Include="Resources\drawable\headset.png" />
+    <AndroidResource Include="Resources\drawable\controller.png" />
+    <AndroidResource Include="Resources\drawable\programming.png" />
+    <AndroidResource Include="Resources\drawable\speaker.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MobileDev02.MVVM\MobileDev02.MVVM.csproj">

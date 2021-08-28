@@ -13,7 +13,7 @@ namespace MobileDev02.MVVM.ViewModels
         public LoginViewModel() {
             LoginCommand = new Command<User>(AuthenticateUser);
             NavigateToSignupCommand = new Command(async () => {
-                await App.Current.MainPage.Navigation.PushModalAsync(new SignUpPage());
+                await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
             });
         }
 
@@ -30,6 +30,7 @@ namespace MobileDev02.MVVM.ViewModels
             }
             else {
                 await App.Current.MainPage.DisplayAlert("Bienvenido", $"Hola {user.Username}", "Gracias");
+                await App.Current.MainPage.Navigation.PushAsync(new HomePage());
             }
         }
     }
