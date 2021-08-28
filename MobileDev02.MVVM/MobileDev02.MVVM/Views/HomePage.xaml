@@ -6,11 +6,19 @@
   <!--Pages can be added as references or inline-->
     <ContentPage Title="Inicio">
         <Grid Padding="10" 
-          VerticalOptions="Center" 
-          RowDefinitions="20, Auto, Auto, Auto, Auto" 
+          RowDefinitions="170, Auto, 170, Auto, Auto" 
           ColumnDefinitions="*,*">
-            <Image Source="speaker.png" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0"  />
-            <Label Text="Opcion 1" FontSize="Title" Grid.Row="1" Grid.Column="0" TextColor="White"/>
+            <Image Source="speaker.png" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" BackgroundColor="AliceBlue" />
+            <Label Text="Opcion 1" FontSize="Title" Grid.Row="1" Grid.Column="0" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            
+            <Image Source="programming.png" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" BackgroundColor="AliceBlue" />
+            <Label Text="Opcion 2" FontSize="Title" Grid.Row="1" Grid.Column="1" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+
+            <Image Source="headset.png" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="0" BackgroundColor="AliceBlue" />
+            <Label Text="Opcion 3" FontSize="Title" Grid.Row="3" Grid.Column="0" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+
+            <Image Source="controller.png" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1" BackgroundColor="AliceBlue" />
+            <Label Text="Opcion 4" FontSize="Title" Grid.Row="3" Grid.Column="1" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
         </Grid>
     </ContentPage>
     <ContentPage Title="Opcion 2" />
