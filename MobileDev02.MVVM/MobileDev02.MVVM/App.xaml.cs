@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MobileDev02.MVVM.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,7 +10,7 @@ namespace MobileDev02.MVVM
         public App() {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart() {

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDev02.MVVM.Views.LoginPage"
+             Title="Apps con Power - Iniciar Sesión">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="black" Padding="20" CornerRadius="0">
+                <Label Text="Bienvenido a mi PowerApp!" HorizontalTextAlignment="Center" TextColor="White" FontSize="34"/>
+            </Frame>
+            <Image Source="powerapplogo.png" HeightRequest="200" HorizontalOptions="Center" WidthRequest="200"/>
+            <Label Text="Digite sus Credenciales" FontSize="Title" HorizontalOptions="Center" Padding="30,10,30,10"/>
+            <Entry Text="{Binding User.Username}" Placeholder="Nombre de Usuario" Margin="20,0,20,0"/>
+            <Entry Text="{Binding User.Password}" Placeholder="Clave" IsPassword="True" Margin="20,0,20,0"/>
+            <Button Text="Iniciar Sesión" Command="{Binding LoginCommand}" CommandParameter="{Binding User}"></Button>
+            <Button Text="Registrarse" Command="{Binding NavigateToSignupCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
